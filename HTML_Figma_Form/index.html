@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Notebook - User</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="header-container">
+            <ul>
+                <li><a href="">TRANG CHỦ</a></li>
+                <li><a href="">THÔNG TIN CÁ NHÂN</a></li>
+                <li><a href="">QUẢN LÝ BIỂU MẪU</a></li>
+                <li><a href="">QUẢN LÝ TÀI KHOẢN</a></li>
+                <li><a href="">LOGOUT</a></li>
+            </ul>
+        </div> -->
+
+        <div class="header__content">
+            <a href=""><img src="./image/Medical Notebook.png" alt="">
+            </a>                
+            <ul>
+                <a href="#">
+                    <span>TRANG CHỦ</span>
+                </a>
+                <a href="#">
+                    <span>THÔNG TIN CÁ NHÂN</span>
+                </a>
+                <a href="#">
+                    <span>QUẢN LÝ BIỂU MẪU</span>
+                </a>
+                <a href="#">
+                    <span>QUẢN LÝ TÀI KHOẢN</span>
+                </a>
+            </ul>
+            <button class="btn-grad">
+                ĐĂNG XUẤT
+            </button>
+        </div>
+
+        <div class="content">
+            <div class="user-container">
+                <div class="user-timer">
+                    <input type="date" style="
+                    border: 1px solid #cecece;
+                    border-radius: 6px;
+                    padding: 4px 16px;">
+                </div>
+                <div class="user-avatar">
+                    <div class="user-avatar_desc">
+                        <p>PHẠM CÔNG HOÀNG</p>
+                        <span>Nam - 21 tuổi</span>
+                    </div>
+                    <div class="user-avatar_img">
+                        <img src="./image/user 1.png" alt="">
+                    </div>
+                    <div class="user-avatar_options">
+                        <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-container">
+                <div class="form-title">
+                    <h2>ĐĂNG KÝ TIÊM CÁ NHÂN</h2>
+                </div>
+                <div class="form-steps">
+                    <div class="form-steps_item active">
+                        <p>Bước 1</p>
+                        <span>Phiếu đăng ký tiêm</span>
+                    </div>
+                    <div class="form-steps_item">
+                        <p>Bước 2</p>
+                        <span>Phiếu đồng ý tiêm</span>
+                    </div>
+                    <div class="form-steps_item">
+                        <p>Bước 3</p>
+                        <span>Hoàn thành</span>
+                    </div>
+                </div>
+                <div class="form-content">
+                    <div class="form-content_firstline">
+                        <ul>
+                            <li>Đăng ký cho người thân</li>
+                        </ul>
+                    </div>
+                    <div class="form-content_middle">
+                        <div class="flex-between  form-helper_desc">
+                            <div class="form-group">
+                                <label for="">Họ và tên người đăng ký giúp: </label>
+                                <input type="text" placeholder="................................">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Số điện thoại: </label>
+                                <input type="text" placeholder="................................">
+                            </div>
+                        </div>
+                        <div class="flex-between  form-branch">
+                            <div class="form-group">
+                                <p>CƠ SỞ TIÊM CHỦNG </p>
+                                <input type="text" placeholder="....................">
+                                <br>
+                            </div>
+                            <div class="form-group">
+                                <br>
+                                <p>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
+                                <span> Độc lập - Tự do - Hạnh phúc </span>
+                            </div>
+                        </div>
+                        <div class="flex-between  form-title">
+                            <h3> PHIẾU SÀNG LỌC TRƯ ỚC TIÊM CHỦNG VẮC XIN PHÒNG COVID-19 </h3>
+                        </div>
+                        <div class="flex-between form-name">
+                            <div class="form-group">
+                                <label for="">  Họ và tên:</label>
+                                <input type="text" placeholder="............................">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Ngày sinh:</label>
+                                <input type="text" placeholder="............................">
+                            </div>
+                            <div class="form-group">
+                                <label for="">  Nam</label>
+                                <input type="checkbox">
+                                <label for="">  Nữ</label>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="flex-between form-ID">
+                            <div class="form-group">
+                                <label for="">  Số CCCD: </label>
+                                <input type="text" placeholder="............................">
+                            </div>
+                            <div class="form-group">
+                                <label for=""> Số điện thoại: </label>
+                                <input type="text" placeholder="............................">
+                            </div>
+                        </div>
+                        <div class="flex-between form-work">
+                            <div class="form-group">
+                                <label for="">  Địa chỉ liên hệ: </label>
+                                <input type="text" placeholder="............................">
+                            </div>
+                        </div>
+                        <div class="flex-between form-address">
+                            <div class="form-group">
+                                <label for="">  Đơn vị công tác: </label>
+                                <input type="text" placeholder="............................">
+                            </div>
+                            <div class="form-group">
+                                <label for=""> Phường: </label>
+                                <input type="text" placeholder="............................">
+                            </div>
+                            <div class="form-group">
+                                <label for="">  Quận: </label>
+                                <input type="text" placeholder="............................">
+                            </div>
+                        </div>
+                        <div class=" form-check-vaccine">
+                            <p>Đã tiêm mũi 1 vắc xin phòng COVID-19:
+                            </p>
+                            <input type="checkbox">
+                            <label for="">Chưa tiêm</label>
+                            <br>
+                            <input type="checkbox">
+                            <label for="">Đã tiêm, loại vaccine</label><input type="text" placeholder="..........................">
+                        </div>
+                        <div class="form-table">
+                            <table border="1px">
+                                <tr>
+                                    <td>1. Tiền sử rõ ràng phản vệ với vắc xin phòng COVID-19 lần trƣớc hoặc các thành phần của vắcxin phòng COVID-19</td>
+                                    <td>Không <input type="checkbox"></td>
+                                    <td>Có <input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>2. Tiền sử bệnh COVID-19 trong vòng 6 tháng</td>
+                                    <td>Không <input type="checkbox"></td>
+                                    <td>Có <input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>3. Đang mắc bệnh cấp tính </td>
+                                    <td>Không <input type="checkbox"></td>
+                                    <td>Có <input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>4. Phụ nữ mang thai *
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 100px;">4a. Phụ nữ mang thai
+                                        < 13 tuần</td>
+                                            <td>Không <input type="checkbox"></td>
+                                            <td>Có <input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 100px;">4b. Phụ nữ mang thai ≥ 13 tuần </td>
+                                    <td>Không <input type="checkbox"></td>
+                                    <td>Có <input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>5. Phản vệ độ 3 trở lên với bất kỳ dị nguyên nào (Nếu có, loại tác nhân dị ứng <input type="text" placeholder="............................."> ) </td>
+                                    <td>Không <input type="checkbox"></td>
+                                    <td>Có <input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>6. Đang bị suy giảm miễn dịch nặng, ung thƣ giai đoạn cuối đang điều trị hóa trị, xạ trị</td>
+                                    <td>Không <input type="checkbox"></td>
+                                    <td>Có <input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>7. Tiền sử dị ứng với bất kỳ dị nguyên nào</td>
+                                    <td>Không <input type="checkbox"></td>
+                                    <td>Có <input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>8. Tiền sử rối loạn đông máu/cầm máu</td>
+                                    <td>Không <input type="checkbox"></td>
+                                    <td>Có <input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>9. Rối loạn tri giác, rối loạn hành vi </td>
+                                    <td>Không <input type="checkbox"></td>
+                                    <td>Có <input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>10. Bất thƣờng dấu hiệu sống (Nếu có, ghi rõ <input type="text" placeholder="............................">)
+                                        <br>
+                                        <ul>
+                                            <li>Nhiệt độ: <input type="text" placeholder="............................"> độ C</li>
+                                            <li>Mạch: <input type="text" placeholder="............................"> Lần/phút</li>
+                                            <li>Huyết áp: <input type="text" placeholder="............................"> mmHg</li>
+                                            <li>Nhịp thở: <input type="text" placeholder="............................"> lần/phút</li>
+                                        </ul>
+                                    </td>
+                                    <td>Không <input type="checkbox"></td>
+                                    <td>Có <input type="checkbox"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="form-conclude">
+                            <p>II. Kết luận: </p>
+                            <ul>
+                                <li>- Đủ điều kiện tiêm chủng ngay: Tất cả đều KHÔNG có điểm bất thường □
+                                </li>
+                                <li>- Chống chỉ định tiêm chủng vắc xin cùng loại: Khi CÓ bất thường tại mục 1 □
+                                </li>
+                                <li>- Trì hoãn tiêm chủng: Khi CÓ bất kỳ một điểm bất thường tại các mục 2, 3, 4a □
+                                </li>
+                                <li>- Chỉ định tiêm tại các cơ sở y tế có đủ điều kiện cấp cứu phản vệ: Khi CÓ bất thường tại mục 5 □
+                                </li>
+                                <li>- Nhóm thận trọng khi tiêm chủng: Khi CÓ bất kỳ một điểm bất thường tại các mục 4b#, 6, 7, 8, 9,10. □
+                                </li>
+                                <li>* Phụ nữ đang mang thai và cho con bú: Chống chỉ định với vắc xin Sputnik V.
+                                </li>
+                                <li># Với phụ nữ mang thai ≥ 13 tuần: Giải thích lợi ích/nguy cơ và ký cam kết nếu đồng ý tiêm và chuyển đến cơ sở có cấp cứu sản khoa để tiêm.
+                                </li>
+                            </ul>
+                            <div class="times">
+                                <label for="">Thời gian: </label>
+                                <input type="text" placeholder="............">
+                                <label for="">giờ </label>
+                                <input type="text" placeholder="............">
+                                <label for="">phút, ngày </label>
+                                <input type="text" placeholder="............">
+                                <label for="">tháng </label>
+                                <input type="text" placeholder="............">
+                                <label for="">năm </label>
+                                <input type="text" placeholder="............">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-content_footer">
+                        <p>Lưu ý:</p>
+                        <ul>
+                            <li>Việc đăng ký thông tin hoàn toàn bảo mật và phục vụ cho chiến dịch tiêm chủng Vắc xin COVID - 19</li>
+                            <li>Xin vui lòng kiểm tra kỹ các thông tin bắt buộc(VD: Họ và tên, Ngày tháng năm sinh, Số điện thoại, CCCD/Mã định danh công dân/HC ...)</li>
+                            <li>Bằng việc nhấn nút "Xác nhận", bạn hoàn toàn hiểu và đồng ý chịu trách nhiệm với các thông tin đã cung cấp.</li>
+                        </ul>
+                    </div>
+                    <div class="form-control">
+                        <a href="">Hủy bỏ</a>
+                        <a href="./step-2.html">Tiếp tục ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

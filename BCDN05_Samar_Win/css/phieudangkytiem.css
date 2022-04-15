@@ -1,0 +1,274 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html,body{
+font-family: "Roboto";
+line-height: 1.6;
+font-size: 16px;
+}
+header{
+  width: 100%;
+  position: relative;
+  z-index: 99;
+  background: transparent;
+  background-color: #60cef0;
+}
+.header__content{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-size: cover;
+}
+.header__content img{
+  width: 100px;
+}
+.header__content a{
+  margin-left: 30px ;
+  text-decoration: none solid rgb(99,99,99);
+  padding: 0 5px;
+  color: rgb(240, 234, 234);
+}
+.header__content .btn-grad{
+  margin-left: 50px;
+}
+.header__content button{
+  border: 2px solid ;
+  background-color: #f55f8d;
+  border-radius: 30px;
+  background-size: 200px;
+  padding: 12px 25px;
+  transition: all .5s;
+}
+.header__content  a:hover span {
+  animation: upToDown 0.2s;
+  color: #592975;
+}
+.header__content span {
+  display: inline-block;
+  transition: all 1s;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: whitesmoke;
+}
+.header__content a i{
+  color: black;
+  font-weight: bold;
+}
+
+.btn-grad {
+  /*  linear-gradient(hướng trải màu, danh sách các màu );
+      _ to right: màu đang được trải từ trái sang phải
+      _ #fc00ff 0%, #00dbde 51%, #fc00ff 100%: thứ tự màu cần trải, phần trăm sau mã màu là vị trí bắt đầu trải của màu đó.
+        Nếu không thêm phần trăm thì linear-gradient sẽ tự chia vùng màu sao cho đều nhau
+  */
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0%,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  /*   tăng kích thước của màu nền, giúp vùng trải màu rộng hơn làm màu loan hơn */
+  background-size: 200%;
+
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  /*   Khi hover chỉnh vị trí ưu tiên hiện của màu nền 
+  Mặc định không xét giá trị cho background-position 
+  thì sẽ có giá trị mặc định background-position: left top; 
+  */
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__info {
+  width: 100%;
+  background-color: #60cef0;
+  height: 40px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.div__left{
+width: 40%;
+  float: left;
+  text-align: center;
+}
+
+.div__left i, span{
+  color: rgb(50, 79, 122);
+  font-size: 20px;
+}
+.div__left a{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.div__right{
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+.div__right i, span{
+  color: rgb(50, 79, 122);
+  font-size: 20px;
+}
+.div__right a{
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.content__info{
+  width: 100%;
+  height: 20px;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 10px;
+}
+#current-time {
+  width: 40%;
+  float: left;
+  text-align: center;
+  height: 50px;
+  font-size: 20px;
+
+}
+.thongtinuser{
+  width: 40%;
+  float: left;
+  text-align: center;
+  height: 50px;
+}
+.thongtinuser h2,p{
+  font-size:18px;
+  padding-right: 30%;
+}
+.thongtinuser img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+.imgthongtinuser{
+  float: left;
+  padding-left: 30%;
+}
+
+/* PHIẾU ĐĂNG KÝ */
+.dangkytiemcanhan{
+  padding: 15px 0;
+  background-color:#F8F9FA;
+  margin-top: 45px;
+}
+.container{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  font-size:16px; 
+  /* width: 80%; */
+  margin: auto;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  min-height: 40px;
+}
+.container a{
+  color: red;
+}
+.container li{
+  float: left;
+}
+.container h2{
+  font-size:28px;
+}
+
+.cacbuocdangky{
+  width: 70%;
+  margin-top: 30px;
+  /* background-color: #f8f9fa!important; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-size: cover;
+}
+.cacbuoc{
+  width: 330px;
+  float: left;
+  display: block;
+  border-right: 3px solid #dee2e6;
+  box-shadow: 5px 5px 5px #dee2e6;
+  border-radius: 5px;
+  min-height: auto;
+  text-align: left;
+  padding: 8px 8px 8px 8px;
+  min-width: auto;
+  color: #7C7C7D;
+  margin-top: 40px;
+}
+.cacbuoc h5{
+  font-size: 20px;
+}
+.cacbuoc p{
+  font-size: 16px;
+}
+#cacbuoc1{
+  background-color: rgba(40,27,164,.10196078431372549);
+  color: #281ba4;
+}
+.radio__button{
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+.form__dangkytiem{
+  width: 80%;
+  background-color: #F5F6FA;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.left__div{
+width: 45%;
+float: left;
+height: 100px;
+padding-left: 30px;
+}
+.right__div {
+width: 50%;
+float: right;
+height: 100px;
+text-align: center;
+}
+.right__div p{
+  text-align: right;
+}
+.phieusangloc{
+  text-align: center;
+}
+.form__group{
+  margin-bottom: 1rem;
+  height: 50px;
+  float: left;
+  display: block;
+}

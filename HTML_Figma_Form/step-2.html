@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="header-container">
+            <ul>
+                <li><a href="">TRANG CHỦ</a></li>
+                <li><a href="">THÔNG TIN CÁ NHÂN</a></li>
+                <li><a href="">QUẢN LÝ BIỂU MẪU</a></li>
+                <li><a href="">QUẢN LÝ TÀI KHOẢN</a></li>
+                <li><a href="">LOGOUT</a></li>
+            </ul>
+        </div> -->
+
+        <div class="header__content">
+            <a href=""><img src="./image/Medical Notebook.png" alt="">
+            </a>                
+            <ul>
+                <a href="#">
+                    <span>TRANG CHỦ</span>
+                </a>
+                <a href="#">
+                    <span>THÔNG TIN CÁ NHÂN</span>
+                </a>
+                <a href="#">
+                    <span>QUẢN LÝ BIỂU MẪU</span>
+                </a>
+                <a href="#">
+                    <span>QUẢN LÝ TÀI KHOẢN</span>
+                </a>
+            </ul>
+            <button class="btn-grad">
+                ĐĂNG XUẤT
+            </button>
+        </div>
+
+        <div class="content">
+            <div class="user-container">
+                <div class="user-timer">
+                    <input type="date" style="
+                    border: 1px solid #cecece;
+                    border-radius: 6px;
+                    padding: 4px 16px;">
+                </div>
+                <div class="user-avatar">
+                    <div class="user-avatar_desc">
+                        <p>PHẠM CÔNG HOÀNG</p>
+                        <span>Nam - 21 tuổi</span>
+                    </div>
+                    <div class="user-avatar_img">
+                        <img src="./image/user 1.png" alt="">
+                    </div>
+                    <div class="user-avatar_options">
+                        <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-container">
+                <div class="form-title">
+                    <h2>ĐĂNG KÝ TIÊM CÁ NHÂN</h2>
+                </div>
+                <div class="form-steps">
+                    <div class="form-steps_item ">
+                        <p>Bước 1</p>
+                        <span>Phiếu đăng ký tiêm</span>
+                    </div>
+                    <div class="form-steps_item active">
+                        <p>Bước 2</p>
+                        <span>Phiếu đồng ý tiêm</span>
+                    </div>
+                    <div class="form-steps_item">
+                        <p>Bước 3</p>
+                        <span>Hoàn thành</span>
+                    </div>
+                </div>
+                <div class="form-content">
+                    <div class="form-vaccination-consent ">
+                        <h3>PHIẾU ĐỒNG Ý THAM GIA TIÊM CHỦNG VẮC XIN COVID - 19</h3>
+                        <ul>
+                            <li>1. Tiêm chủng vắc xin là biện pháp phòng bệnh hiệu quả , tuy nhiên vác xin phòng COVID - 19 có thể không phòng được bệnh hoàn toàn . Người được tiêm chung vắc xin phòng COVID - 19 đủ liều có thể phòng được bệnh hoặc giảm mức
+                                độ nặng nếu mặc COVID - 19 . Sau khi được tiêm vắc xin phòng COVID- 19 cần thực hiện đầy đủ Thông điệp 5K phòng , chống dịch COVID - 19</li>
+                            <li> 2. Tiêm chủng vác xin phòng COVID - 19 có thể gây ra một số biểu hiện tại chỗ tiêm hoặc toàn thân như sưng , đau chỗ tiêm , nhức đầu , buồn nôn , sốt , đau cơ ... hoặc tại biến nặng sau tiêm chủng</li>
+                            <li> 3. Khi có triệu chứng bất thường về sức khỏe , người được tiêm chủng căn liên hệ với cơ sở y tế gần nhất để được tư văn , khám và điều trị kịp thời </li>
+                            <li> 4. Thuộc nhóm đối tượng <input type="text" placeholder="..............................."></li>
+                            <li> Sau khi đã đọc các thông tin nêu tôi đã hiểu về các nguy cơ và </li>
+                            <li class="flex-between">
+                                <p>Đồng ý tiêm chủng <input type="checkbox"></p>
+                                <p>Không đồng ý tiêm chủng <input type="checkbox"></p>
+                            </li>
+                            <li> Họ tên người được tiêm chủng <input type="text" placeholder="..........................."></li>
+                            <li> Số điện thoai <input type="text" placeholder="..........................."></li>
+                            <li>
+                                <input type="text" placeholder="............"> <label>, ngày</label>
+                                <input type="text" placeholder="............"> <label> tháng</label>
+                                <input type="text" placeholder="............"> <label> năm 2021</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-control">
+                        <a href="./index.html">Hủy bỏ</a>
+                        <button href="" onclick="togglePupup()">Tiếp tục ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pupup">
+            <img src="./image/Green Leaf Plus Hospital Center Logo 3.png" alt="">
+            <p class="pupup-line_1">Mã xác mình sẽ được gửi đến SĐT mà bạn đăng ký</p>
+            <div class="pupup-otp">
+                <input type="number">
+                <input type="number">
+                <input type="number">
+                <input type="number">
+                <input type="number">
+                <input type="number">
+            </div>
+            <p class="pupup-line_2">Nếu bạn không nhận được tin nhắn, xin vui lòng thử lại sau: </p>
+            <p class="pupup-line_3">00:02:00</p>
+            <div class="pupup-control">
+                <a onclick="togglePupup()">Hủy bỏ</a>
+                <a href="./step-3.html">Xác nhận</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    function togglePupup() {
+        document.querySelector('.pupup').classList.toggle('toggle-pupup');
+    }
+</script>
+
+</html>
